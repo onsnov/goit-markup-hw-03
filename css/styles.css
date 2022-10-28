@@ -165,8 +165,8 @@ ul {
   color: var(--secondary-text-color);
 }
 
-.advantages{
-  margin-bottom: 92px;
+.advantages.container{
+  margin-bottom: 94px;
 }
 
 .advantages-title {
@@ -204,6 +204,12 @@ margin-bottom: 10px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+
+.what-wedo.container{
+  margin-bottom: 94px;
 }
 
 /* our team */
@@ -214,6 +220,11 @@ margin-bottom: 10px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+.team .item{
+  margin-bottom: 30px;
 }
 
 .team-title {
@@ -222,6 +233,8 @@ margin-bottom: 10px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 10px;
 }
 
 .team-title-list {
@@ -230,6 +243,8 @@ margin-bottom: 10px;
   text-align: center;
   letter-spacing: 0.03em;
 }
+.team.container {
+  margin-bottom: 0;}
 
 /* footer */
 
