@@ -59,6 +59,10 @@ ul {
 .header-title {
   background-color: #ffffff;
 }
+.header-title .container {
+  border: 1px solid #ececec;
+  border-width: 0 0 1px 0;
+}
 
 .link-webstudio {
   font-family: "Raleway", sans-serif;
@@ -66,11 +70,15 @@ ul {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
+
+  margin-bottom: 20px;
 }
 .logo-web {
   color: var(--accent-color);
 
   font-weight: 700;
+
+  
 }
 
 .logo-studio {
@@ -112,7 +120,6 @@ ul {
 /* hero */
 .hero {
   margin-top: 0;
-  margin-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
 
@@ -120,7 +127,6 @@ ul {
   text-align: center;
 
   width: 1600px;
-  outline: 2px solid tomato;
 }
 
 .hero-title {
@@ -165,12 +171,11 @@ ul {
   color: var(--secondary-text-color);
 }
 
-.advantages.container{
-  margin-bottom: 94px;
+.advantages.container {
 }
 
 .advantages-title {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -205,11 +210,10 @@ margin-bottom: 10px;
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-bottom: 50px;
+  
 }
 
-.what-wedo.container{
-  margin-bottom: 94px;
+.what-wedo.container {
 }
 
 /* our team */
@@ -221,12 +225,15 @@ margin-bottom: 10px;
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-bottom: 50px;
+ 
 }
-.team .item{
+.team .item {
   margin-bottom: 30px;
 }
 
+.section{
+  padding: 94px 0;
+}
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -234,7 +241,7 @@ margin-bottom: 10px;
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .team-title-list {
@@ -243,8 +250,8 @@ margin-bottom: 10px;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team.container {
-  margin-bottom: 0;}
+
+
 
 /* footer */
 
@@ -260,6 +267,8 @@ margin-bottom: 10px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: hsl(0, 0%, 5%);
+
+  margin-bottom: 9px;
 }
 
 /* .adress-town:hover,
@@ -283,6 +292,8 @@ address .link:focus {
 
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+
+  margin-bottom: 9px;
 }
 .adress .adress-tel {
   color: rgba(255, 255, 255, 0.6);
@@ -314,10 +325,33 @@ address .link:focus {
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  margin-bottom: 50px;
 }
+
 
 .filter-list:hover,
 .filter-list:focus {
   color: var(--button-text-color);
   background-color: var(--accent-color);
 }
+
+/* work list */
+
+.works-list .item{
+  margin-bottom: 20px;
+  
+
+}
+.work-list-title{
+  margin-bottom: 4px;
+}
+
+.works-list li{
+  display:inline-block;
+  border: 1px solid #eeeeee;
+  border-width:0 1 1px 1 ;
+}
+
+
+
