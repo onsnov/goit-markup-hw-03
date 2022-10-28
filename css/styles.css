@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -24,6 +24,9 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
+}
+* {
+  padding: 0;
 }
 
 .link {
@@ -59,6 +62,7 @@ ul {
 .header-title {
   background-color: #ffffff;
 }
+
 .header-title .container {
   border: 1px solid #ececec;
   border-width: 0 0 1px 0;
@@ -72,13 +76,16 @@ ul {
   letter-spacing: 0.03em;
 
   margin-bottom: 20px;
+  margin-right: 93px;
 }
+/* .link.link-webstudio{
+  margin-right: 93px;
+} */
+
 .logo-web {
   color: var(--accent-color);
 
   font-weight: 700;
-
-  
 }
 
 .logo-studio {
@@ -90,11 +97,29 @@ ul {
 .logo-studiow {
   color: var(--button-text-color);
 }
-.site-nav .item {
+
+.container.nav {
+  display: flex;
+  align-items: flex-end;
+  align-content: center;
 }
 
+.site-nav {
+  display: flex;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .auth-nav {
+  display: flex;
   margin-bottom: 0;
+}
+
+.auth-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav .link,
@@ -130,7 +155,7 @@ ul {
 }
 
 .hero-title {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   color: var(--button-text-color);
 
@@ -139,7 +164,9 @@ ul {
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
 }
+
 .button {
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
 
@@ -171,7 +198,15 @@ ul {
   color: var(--secondary-text-color);
 }
 
-.advantages.container {
+.advantages-list {
+  display: flex;
+}
+.advantages-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-list > .item {
+  width: calc((100%-120px) / 4);
 }
 
 .advantages-title {
@@ -187,6 +222,7 @@ ul {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
 }
+
 .title-list {
   color: var(--primary-text-color);
 }
@@ -195,6 +231,7 @@ ul {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
+
 .work-text {
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -209,11 +246,18 @@ ul {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-
-  
 }
 
-.what-wedo.container {
+.what-wedo-list {
+  display: flex;
+}
+
+.what-wedo-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.what-wedo-list > .item {
+  width: 370px;
 }
 
 /* our team */
@@ -224,16 +268,16 @@ ul {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-
- 
 }
+
 .team .item {
   margin-bottom: 30px;
 }
 
-.section{
-  padding: 94px 0;
+.section {
+  padding: 94px;
 }
+
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -243,6 +287,9 @@ ul {
 
   margin-bottom: 10px;
 }
+.team-list {
+  
+}
 
 .team-title-list {
   font-size: 16px;
@@ -251,41 +298,30 @@ ul {
   letter-spacing: 0.03em;
 }
 
-
-
 /* footer */
 
 .adress a {
   font-style: normal;
 }
+
 .footer {
   background-color: var(--hero-color);
 }
+
 .adress .adress-town {
-  color: #fff;
+  color: var(--button-text-color);
 
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: hsl(0, 0%, 5%);
 
   margin-bottom: 9px;
 }
 
-/* .adress-town:hover,
-.adress-town:focus,
-.adress-tel:hover,
-.adress-tel:focus,
-.adress-mail:hover,
-.adress-mail:focus,
-.adress:hover {
+/* address .link:hover,
+  address .link:focus {
   color: var(--accent-color);
+  color: rgb(255, 255, 255);
 } */
-
-address .link:hover,
-address .link:focus {
-  color: var(--accent-color);
-  color: rgb(0, 0, 0);
-}
 
 .adress .adress-mail {
   color: rgba(255, 255, 255, 0.6);
@@ -295,6 +331,7 @@ address .link:focus {
 
   margin-bottom: 9px;
 }
+
 .adress .adress-tel {
   color: rgba(255, 255, 255, 0.6);
 
@@ -302,6 +339,15 @@ address .link:focus {
   letter-spacing: 0.03em;
 }
 
+.adress-town:hover,
+.adress-town:focus,
+.adress-tel:hover,
+.adress-tel:focus,
+.adress-mail:hover,
+.adress-mail:focus,
+.adress:hover {
+  color: var(--accent-color);
+}
 /* portfolio.html */
 
 /* filter */
@@ -318,9 +364,11 @@ address .link:focus {
   letter-spacing: 0.03em;
   font-family: inherit;
 }
+
 .filter .item:not(:last-child) {
   margin-right: 8px;
 }
+
 .filter {
   display: flex;
   flex-direction: row;
@@ -328,7 +376,6 @@ address .link:focus {
 
   margin-bottom: 50px;
 }
-
 
 .filter-list:hover,
 .filter-list:focus {
@@ -338,20 +385,21 @@ address .link:focus {
 
 /* work list */
 
-.works-list .item{
+.works-list .item {
   margin-bottom: 20px;
-  
-
 }
-.work-list-title{
+
+.work-list-title {
   margin-bottom: 4px;
 }
 
-.works-list li{
-  display:inline-block;
+.works-list li {
   border: 1px solid #eeeeee;
-  border-width:0 1 1px 1 ;
+  border-width: 0 1 1px 1;
 }
 
-
-
+.works-list {
+  display: inline-block;
+  padding-right: 20px;
+  padding-left: 20px;
+}
